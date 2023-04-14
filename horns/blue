@@ -1,4 +1,4 @@
-function l(a, _)
+        function l(a, _)
             local b = Instance.new("Weld")
             b.Part0 = a.Parent
             b.Part1 = _.Parent
@@ -7,14 +7,14 @@ function l(a, _)
             b.Parent = a.Parent
             return b
         end
-        local function _(c, e, _, b, d, a)
+        local function _(_, a, b, d, c, e)
             local f = Instance.new("Weld")
-            f.Name = c
-            f.Part0 = _
-            f.Part1 = b
-            f.C0 = d
-            f.C1 = a
-            f.Parent = e
+            f.Name = _
+            f.Part0 = b
+            f.Part1 = d
+            f.C0 = c
+            f.C1 = e
+            f.Parent = a
             return f
         end
         local function a(_, b)
@@ -29,26 +29,26 @@ function l(a, _)
                 end
             end
         end
-        function k(b, c)
-            c.Parent = b
+        function k(e, c)
+            c.Parent = e
             local d = c:FindFirstChild("Handle")
             if d then
-                local e = d:FindFirstChildOfClass("Attachment")
-                if e then
-                    local _ = a(b, e.Name)
+                local b = d:FindFirstChildOfClass("Attachment")
+                if b then
+                    local _ = a(e, b.Name)
                     if _ then
-                        l(_, e)
+                        l(_, b)
                     end
                 else
-                    local e = b:FindFirstChild("Head")
+                    local e = e:FindFirstChild("Head")
                     if e then
-                        local a = CFrame.new(0, 0.5, 0)
-                        local b = c.AttachmentPoint
-                        _("HeadWeld", e, e, d, a, b)
+                        local b = CFrame.new(0, 0.5, 0)
+                        local a = c.AttachmentPoint
+                        _("HeadWeld", e, e, d, b, a)
                     end
                 end
             end
         end
-        local _ = 1744060292
+        local _ = 74891470
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.LocalPlayer.Character, _)

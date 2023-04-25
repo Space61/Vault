@@ -1,8 +1,8 @@
-	local _ = game.Players.LocalPlayer
-	local _ = _.Character
-	_.LeftLowerLeg.MeshId = "101851582"
-	_.LeftLowerLeg.Transparency = "1"
-	_.LeftUpperLeg.MeshId = "http://www.roblox.com/asset/?id=101851582"
-	_.LeftUpperLeg.TextureID = "http://roblox.com/asset/?id=101851582"
-	_.LeftFoot.MeshId = "101851582"
-	_.LeftFoot.Transparency = "1"
+local ply = game.Players.LocalPlayer
+local chr = ply.Character
+chr.LeftLowerLeg.MeshId = "101851582"
+chr.LeftLowerLeg.Transparency = "1"
+chr.LeftUpperLeg.MeshId = "http://www.roblox.com/asset/?id=101851582"
+chr.LeftUpperLeg.TextureID = "http://roblox.com/asset/?id=101851582"
+chr.LeftFoot.MeshId = "101851582"
+chr.LeftFoot.Transparency = "1"

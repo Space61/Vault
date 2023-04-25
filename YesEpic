@@ -15,209 +15,32 @@ end)
 local feiryhorns = win:Tab("Feiry Horns")
 local sec = feiryhorns:Section("Feiry Horns")
 sec:Button("Fiery Horns of the Netherworld", function()
-		function l(a, _)
-            local b = Instance.new("Weld")
-            b.Part0 = a.Parent
-            b.Part1 = _.Parent
-            b.C0 = a.CFrame
-            b.C1 = _.CFrame
-            b.Parent = a.Parent
-            return b
-        end
-        local function b(c, a, e, d, b, _)
-            local f = Instance.new("Weld")
-            f.Name = c
-            f.Part0 = e
-            f.Part1 = d
-            f.C0 = b
-            f.C1 = _
-            f.Parent = a
-            return f
-        end
-        local function c(_, a)
-            for _, _ in pairs(_:GetChildren()) do
-                if _:IsA("Attachment") and _.Name == a then
-                    return _
-                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
-                    local _ = c(_, a)
-                    if _ then
-                        return _
-                    end
-                end
-            end
-        end
-        function k(e, _)
-            _.Parent = e
-            local d = _:FindFirstChild("Handle")
-            if d then
-                local a = d:FindFirstChildOfClass("Attachment")
-                if a then
-                    local _ = c(e, a.Name)
-                    if _ then
-                        l(_, a)
-                    end
-                else
-                    local c = e:FindFirstChild("Head")
-                    if c then
-                        local a = CFrame.new(0, 0.5, 0)
-                        local _ = _.AttachmentPoint
-                        b("HeadWeld", c, c, d, a, _)
-                    end
-                end
-            end
-        end
-        local _ = 215718515
-        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
-        k(game.Players.LocalPlayer.Character, _)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/horns/red"))()
 end)
 sec:Button("Frozen Horns of the Frigid Planes", function()
-		function l(a, _)
-            local b = Instance.new("Weld")
-            b.Part0 = a.Parent
-            b.Part1 = _.Parent
-            b.C0 = a.CFrame
-            b.C1 = _.CFrame
-            b.Parent = a.Parent
-            return b
-        end
-        local function _(_, a, b, d, c, e)
-            local f = Instance.new("Weld")
-            f.Name = _
-            f.Part0 = b
-            f.Part1 = d
-            f.C0 = c
-            f.C1 = e
-            f.Parent = a
-            return f
-        end
-        local function a(_, b)
-            for _, _ in pairs(_:GetChildren()) do
-                if _:IsA("Attachment") and _.Name == b then
-                    return _
-                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
-                    local _ = a(_, b)
-                    if _ then
-                        return _
-                    end
-                end
-            end
-        end
-        function k(e, c)
-            c.Parent = e
-            local d = c:FindFirstChild("Handle")
-            if d then
-                local b = d:FindFirstChildOfClass("Attachment")
-                if b then
-                    local _ = a(e, b.Name)
-                    if _ then
-                        l(_, b)
-                    end
-                else
-                    local e = e:FindFirstChild("Head")
-                    if e then
-                        local b = CFrame.new(0, 0.5, 0)
-                        local a = c.AttachmentPoint
-                        _("HeadWeld", e, e, d, b, a)
-                    end
-                end
-            end
-        end
-        local _ = 74891470
-        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
-        k(game.Players.LocalPlayer.Character, _)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/horns/blue"))(
 end)
 sec:Button("Poisoned Horns of the Toxic Wasteland", function()
-		function l(a, _)
-            local b = Instance.new("Weld")
-            b.Part0 = a.Parent
-            b.Part1 = _.Parent
-            b.C0 = a.CFrame
-            b.C1 = _.CFrame
-            b.Parent = a.Parent
-            return b
-        end
-        local function _(c, e, _, b, d, a)
-            local f = Instance.new("Weld")
-            f.Name = c
-            f.Part0 = _
-            f.Part1 = b
-            f.C0 = d
-            f.C1 = a
-            f.Parent = e
-            return f
-        end
-        local function a(_, b)
-            for _, _ in pairs(_:GetChildren()) do
-                if _:IsA("Attachment") and _.Name == b then
-                    return _
-                elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
-                    local _ = a(_, b)
-                    if _ then
-                        return _
-                    end
-                end
-            end
-        end
-        function k(b, c)
-            c.Parent = b
-            local d = c:FindFirstChild("Handle")
-            if d then
-                local e = d:FindFirstChildOfClass("Attachment")
-                if e then
-                    local _ = a(b, e.Name)
-                    if _ then
-                        l(_, e)
-                    end
-                else
-                    local e = b:FindFirstChild("Head")
-                    if e then
-                        local a = CFrame.new(0, 0.5, 0)
-                        local b = c.AttachmentPoint
-                        _("HeadWeld", e, e, d, a, b)
-                    end
-                end
-            end
-        end
-        local _ = 1744060292
-        local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
-        k(game.Players.LocalPlayer.Character, _)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/horns/green"))(
 end)
 local avatarstealer = win:Tab("Avatar Stealer")
 local sec = avatarstealer:Section("Avatar Stealer")
 sec:Button("Avatar Stealer", function()
-	local _ = game:GetService("StarterGui")
-    _:SetCore("SendNotification", {Title = "bypass loaded", Text = "Ignore notifications", Duration = 10})
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/ui/avatarstealer"))()
 end)
 local animations = win:Tab("Animations")
 local sec = animations:Section("Animations")
 sec:Button("Zombie", function()
-	while true do
-	local Animate = game.Players.LocalPlayer.Character.Animate
-	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
-	wait(1)
-	end
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/animations/zombie"))()
 end)
 sec:Button("Mage", function()
-	while true do
-	local Animate = game.Players.LocalPlayer.Character.Animate
-	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=10921148209"
-	wait(1)
-	end
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/animations/mage"))()
 end)
 sec:Button("Bubbly", function()
-	while true do
-	local Animate = game.Players.LocalPlayer.Character.Animate
-	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=10921057244"
-	wait(1)
-	end
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/animations/bubbly"))()
 end)
 sec:Button("Cartoony", function()
-	while true do
-	local Animate = game.Players.LocalPlayer.Character.Animate
-	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=10921076136"
-	wait(1)
-	end
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/animations/cartoon"))()
 end)
 local sec = animations:Section(" ")
 sec:Button("Reset to disable", function()
@@ -226,30 +49,14 @@ end)
 local headlessnkorblox = win:Tab("Headless / Korblox")
 local sec = headlessnkorblox:Section("Headless")
 sec:Button("Headless", function()
-	getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
-	getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
-	getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/ng/headless"))()
 end)
 local sec = headlessnkorblox:Section("Korblox")
 sec:Button("Korblox Right", function()
-	local _ = game.Players.LocalPlayer
-	local _ = _.Character
-	_.RightLowerLeg.MeshId = "902942093"
-	_.RightLowerLeg.Transparency = "1"
-	_.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-	_.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-	_.RightFoot.MeshId = "902942089"
-	_.RightFoot.Transparency = "1"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/ng/korbloxright"))()
 end)
 sec:Button("Korblox Left", function()
-	local _ = game.Players.LocalPlayer
-	local _ = _.Character
-	_.LeftLowerLeg.MeshId = "101851582"
-	_.LeftLowerLeg.Transparency = "1"
-	_.LeftUpperLeg.MeshId = "http://www.roblox.com/asset/?id=101851582"
-	_.LeftUpperLeg.TextureID = "http://roblox.com/asset/?id=101851582"
-	_.LeftFoot.MeshId = "101851582"
-	_.LeftFoot.Transparency = "1"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/ng/korbloxleft"))()
 end)
 local streamable = win:Tab("Streamable")
 local sec = streamable:Section("Streamable")
@@ -267,13 +74,15 @@ sec:Button("Nyula Streamable", function()
 	_G.Simple = false 
 	loadstring(game:HttpGet("https://nyulachan.github.io/nyula/Nyula/nyula", true))()
 end)
-
-local aimviewer = win:Tab("Anti Aim Viewer")
-local sec = aimviewer:Section("Anti Aim Viewer")
+local aimviewer = win:Tab("Aim Viewer")
+local sec = aimviewer:Section("Aim Viewer")
 sec:Button("Aim Viewer", function()
+	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4ff4544ebf91461b2e3fe03e2d389da5.lua"))()
+end)
+local sec = aimviewer:Section("Anti Aim Viewer")
+sec:Button("Anti iewer", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/aimveiwer%20bypass"))()
 end)
-
 local antiprem = win:Tab("Anti Premium")
 local sec = antiprem:Section("Anti Swagmode Premium")
 sec:Button("Anti Swag Premium", function()
@@ -284,7 +93,6 @@ sec:Button("Anti Faded Premium", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/antifaded"))()
 end)
 
---GROUP BYPASS
+--dont touch this
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/ui/groupbypass"))()
---ANTIAFK
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/ui/antiafk"))()

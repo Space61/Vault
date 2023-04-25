@@ -1,0 +1,3 @@
+getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()

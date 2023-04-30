@@ -62,15 +62,6 @@ end)
 sec:Button("Nyula Streamable", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/gui/nyulastreamable", true))()
 end)
-local aimviewer = win:Tab("Aim Viewer")
-local sec = aimviewer:Section("Aim Viewer")
-sec:Button("Aim Viewer", function()
-	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4ff4544ebf91461b2e3fe03e2d389da5.lua"))()
-end)
-local sec = aimviewer:Section("Anti Aim Viewer")
-sec:Button("Anti AimViewer", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Space61/Vault/main/aimviewer"))()
-end)
 
 
 --dont touch this

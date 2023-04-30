@@ -1,7 +1,0 @@
-getgenv().Settings = {
-    ['Mode'] = 'Swagmode', --[ Faded / Swagmode ]
-    ['Anti Execution Logger'] = false,
-    ['Anti Premium'] = true
-}
- 
-loadstring(game:HttpGet'https://raw.githubusercontent.com/Mi2toyo/Projects/main/RLua/DH/Anti_Premium')()

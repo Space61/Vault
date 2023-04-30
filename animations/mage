@@ -1,5 +1,0 @@
-while true do
-local Animate = game.Players.LocalPlayer.Character.Animate
-Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=10921148209"
-wait(1)
-end

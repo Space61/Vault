@@ -15,7 +15,7 @@ local PlayerName = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.AAACoreGui
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
@@ -141,7 +141,7 @@ local function QYNVFEW_fake_script() -- TextButton_3.LocalScript
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		setfpscap(160)
+		setfpscap(10)
 	end)
 end
 coroutine.wrap(QYNVFEW_fake_script)()

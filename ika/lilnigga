@@ -123,7 +123,6 @@ local function DWRFP_fake_script() -- TextButton_2.LocalScript
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		while true do
 			local _ = game.Players.LocalPlayer
 			local _ = _.Character
 			_.RightLowerLeg.MeshId = "902942093"
@@ -133,7 +132,6 @@ local function DWRFP_fake_script() -- TextButton_2.LocalScript
 			_.RightFoot.MeshId = "902942089"
 			_.RightFoot.Transparency = "1"
 			wait(1)
-		end
 	end)
 end
 coroutine.wrap(DWRFP_fake_script)()
@@ -141,7 +139,7 @@ local function QYNVFEW_fake_script() -- TextButton_3.LocalScript
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		setfpscap(10)
+		setfpscap(60)
 	end)
 end
 coroutine.wrap(QYNVFEW_fake_script)()

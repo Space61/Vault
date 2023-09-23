@@ -19,8 +19,8 @@ local function callback(Text)
    })
    
    _G.KEY = "t" -- the key is q to use when u see the green dot means it lock on to them!
-           _G.PART = "UpperTorso"
-           _G.PRED = 0.059
+           _G.PART = "HumanoidRootPart"
+           _G.PRED = 0.057
            _G.Frame = Vector3.new(0, 0.53, 0)
            local L_76_ = game:GetService "Workspace".CurrentCamera
            local L_77_

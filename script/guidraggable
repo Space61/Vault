@@ -1,4 +1,0 @@
-local frame = script.Parent
-
-frame.Active = true    
-frame.Draggable = true

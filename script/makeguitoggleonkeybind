@@ -1,9 +1,0 @@
-local frame = script.Parent
-local mouse = game:GetService('Players').LocalPlayer:GetMouse();
-
-mouse.KeyDown:connect(function(key)
-    key = key:lower()
-    if key == 'v' then
-        frame.Visible = not frame.Visible
-    end
-end)
